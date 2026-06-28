@@ -20,7 +20,6 @@ label splashscreen:
 label start:
     # Disclaimer Screen
     scene black with dissolve
-    play sound "audio/sfx/typewriter.ogg"
     show screen disclaimer_screen with dissolve
     pause 5
     show screen press_to_continue with dissolve
