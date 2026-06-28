@@ -1,3 +1,14 @@
+screen warning_screen():
+    text """{font=cmunorm.ttf}{size=40}Warning! This game is intended for ages 18+
+It contains adult themes such as
+kidnapping, manipulation, violence,
+foul language, and sexual themes
+Viewer discretion is advised{/size}{/font}""":
+        xalign 0.5
+        yalign 0.45
+        text_align 0.5
+        line_leading 10
+
 screen disclaimer_screen():
     text """{font=cmunorm.ttf}{size=40}The places, events, and characters
 in this game are all works of fiction.
@@ -20,6 +31,13 @@ screen basic_controls():
         yalign 0.45
         text_align 0.5
         line_leading 10
+
+
+screen press_to_continue():
+    text "{font=cmunorm.ttf}{size=40}Press any button or click anywhere to continue{/font}":
+        xalign 0.5
+        yalign 0.90
+        text_align 0.5
 
 
 screen infinite_scream():

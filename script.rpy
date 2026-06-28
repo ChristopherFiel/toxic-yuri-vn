@@ -1,33 +1,50 @@
-﻿# The script of the game goes in this file.
+﻿# Flags are here
+default lily_affection = 0
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
 
-define e = Character("Eileen")
+#Warning splash screen
+label splashscreen:
+    scene black
+    with Pause(1)
 
+    show screen warning_screen with dissolve
+    with Pause(5)
+
+    hide screen warning_screen with dissolve
+    with Pause(1)
+
+    return
 
 # The game starts here.
 
 label start:
+    # Disclaimer Screen
+    scene black with dissolve
+    play sound "audio/sfx/typewriter.ogg"
+    show screen disclaimer_screen with dissolve
+    pause 5
+    show screen press_to_continue with dissolve
+    pause
+    hide screen disclaimer_screen
+    hide screen press_to_continue
+    with dissolve
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
+    # Basic Controls
+    scene black with dissolve
+    show screen basic_controls with dissolve
+    pause 5
+    show screen press_to_continue with dissolve
+    pause
+    hide screen basic_controls
+    hide screen press_to_continue
+    with dissolve
+    stop sound fadeout 0.5
     scene bg room
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    show lily
 
-    show eileen happy
+    l "You've created a new Ren'Py game."
 
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
+    l "Once you add a story, pictures, and music, you can release it to the world!"
 
     return
