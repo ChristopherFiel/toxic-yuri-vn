@@ -1,7 +1,7 @@
 # toxic-yuri-vn
 How to use:
 * Click the green code button beside the add file
-[click this](../../../../../../..)
+[click this](https://i.sstatic.net/V4WR6.png)
 * Download as zip
 * Inside the extracted zip folder, create a new folder named "game"
 * Move all the files inside to newly created "game" folder
